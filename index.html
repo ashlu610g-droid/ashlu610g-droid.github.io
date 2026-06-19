@@ -1,15 +1,132 @@
 <!DOCTYPE html>
-<html>
-  <head>
-  <title>My Portfolio</title>
-  </head>
-  <body>
-    <h1>Hello, this is Ashlesha!</h1>
-    <p>Welcome to my Portfolio. Here are my projects:</p>
-    <ul>
-      <li>My First HTML project</li>
-      <li>Learning Git and Github</li>
-    </ul>
-    <p>Contact me at ashlu610g@gmail.com</p>
-  </body>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashlesha Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <aside class="sidebar">
+
+        <img src="profile1.png" alt="Ashlesha" class="profile-img">
+
+        <h2>Ashlesha</h2>
+
+        <p class="role">
+            <span id="typing-text"></span>
+        </p>
+
+        <div class="info">
+            <p>📧 ashlu610g@gmail.com</p>
+            <p>📍 India</p>
+        </div>
+
+        <button id="themeToggle" class="btn theme-btn">
+            🌙 Dark Mode
+        </button>
+
+        <nav class="side-menu">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <section class="hero">
+
+            <div class="hero-text">
+                <h3 id="greeting"></h3>
+
+                <h1>Hello, I'm <span>Ashlesha</span></h1>
+
+                <p>
+                    Passionate beginner web developer learning HTML,
+                    CSS, Git and modern web design.
+                </p>
+
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="card">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am an enthusiastic beginner web developer focused on
+                continuously improving my technical and design skills.
+                I enjoy building responsive websites and learning
+                modern web development technologies.
+            </p>
+
+        </section>
+
+        <section id="projects" class="card">
+
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>HTML Portfolio</h3>
+                    <p>My first portfolio website built with HTML and CSS.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Git & GitHub</h3>
+                    <p>Version control practice and repository management.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Responsive Design</h3>
+                    <p>Learning mobile-friendly website development.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="card">
+
+            <h2>Contact</h2>
+
+            <p>Email: ashlu610g@gmail.com</p>
+            <p>India</p>
+            
+            <br>
+
+            <button id="contactBtn" class="btn">
+                Send Email
+            </button>
+
+        </section>
+
+        <footer class="footer">
+            <p>© <span id="year"></span> Ashlesha Portfolio</p>
+        </footer>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
